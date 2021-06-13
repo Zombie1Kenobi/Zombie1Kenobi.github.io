@@ -1,0 +1,35 @@
+body {
+	background-color: #181818;
+}
+
+h1 {
+	color: white;
+	font-size: 45px;
+  text-align: center;
+}
+
+p {
+	color: #DDDDDD;
+	font-size: 30px;
+  text-align: center;
+}
+
+a:link {
+  color: #5f89d2;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #005dff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
