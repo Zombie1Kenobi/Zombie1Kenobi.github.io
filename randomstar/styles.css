@@ -38,7 +38,7 @@ a:active {
 }
 
 .prompt, .prompt2 {
-	font-family: "Open Sans", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	color: white;
 	text-align: center;
 	font-size:30px;
@@ -60,7 +60,7 @@ a:active {
 .button {
 	background-color: #3690ff;
 
-	font-family: "Open Sans", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 	font-size: 25px;
 	padding: 10px 0px;
@@ -143,21 +143,62 @@ input:checked + .slider:before {
 .on, .off {
   color: white;
   position: fixed ;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 	font-size: 30px;
 	bottom: 15%;
 }
 
 .on {
-  left: 36.328125%;
+  left: 18.164%;
 }
 
 .off {
-  right: 36.328125%;
+  right: 18.164%;
 }
 
 .github {
 	position:fixed;
 	bottom:0;
 	left:0;
+}
+
+@media only screen and (max-width: 700px) {
+  .on {
+    left: 1%;
+  }
+
+	.off {
+		right: 1%;
+	}
+}
+
+@media only screen and (max-width: 530px) {
+  .on {
+    font-size: 6vw;
+  }
+	.off {
+		font-size: 6vw;
+	}
+	.prompt {
+		top: 45%;
+		font-size: 6vw;
+	}
+	.prompt2 {
+		top: 35%;
+		font-size: 6vw;
+	}
+	.switch {
+		width: 11vw;
+		height: 6vw;
+	}
+	.slider:before {
+	  height: 5vw;
+	  width: 5vw;
+	}
+	input:checked + .slider:before {
+	  left: 6vw;
+	}
+	.button {
+		font-size: 5vw;
+	}
 }
