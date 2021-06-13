@@ -1,15 +1,26 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('resources/OpenSans.eot');
+  src: url('resources/OpenSans.eot?#iefix') format('embedded-opentype'),
+  	 	url('resources/OpenSans.woff') format('woff'),
+			url('resources/OpenSans.ttf') format('truetype'),
+  		url('resources/OpenSans.svg#OpenSans') format('svg');
+}
+
 body {
 	background-color: #181818;
 }
 
 h1 {
 	color: white;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 45px;
   text-align: center;
 }
 
 p {
 	color: #DDDDDD;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 30px;
   text-align: center;
 }
@@ -36,6 +47,6 @@ a:active {
 
 .github {
 	position:fixed;
-	top:0;
+	bottom:0;
 	left:0;
 }

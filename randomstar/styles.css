@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../resources/OpenSans.eot');
+  src: url('../resources/OpenSans.eot?#iefix') format('embedded-opentype'),
+  	 	url('../resources/OpenSans.woff') format('woff'),
+			url('../resources/OpenSans.ttf') format('truetype'),
+  		url('../resources/OpenSans.svg#OpenSans') format('svg');
+}
+
 body {
 	background-color: #181818;
 }
@@ -28,36 +37,30 @@ a:active {
   text-decoration: underline;
 }
 
-.prompt {
-	font-family: opensans;
+.prompt, .prompt2 {
+	font-family: "Open Sans", sans-serif;
 	color: white;
 	text-align: center;
 	font-size:30px;
 
 	position: fixed;
 	width: 90%;
-	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
 
-.prompt2 {
-	font-family: opensans;
-	color: white;
-	text-align: center;
-	font-size:30px;
+.prompt {
+	top: 50%;
+}
 
-	position: fixed;
-	width: 90%;
+.prompt2 {
 	top: 40%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 }
 
 .button {
 	background-color: #3690ff;
 
-	font-family: opensans;
+	font-family: "Open Sans", sans-serif;
 	text-align: center;
 	font-size: 25px;
 	padding: 10px 0px;
@@ -140,7 +143,7 @@ input:checked + .slider:before {
 .on, .off {
   color: white;
   position: fixed ;
-  font-family: opensans;
+  font-family: "Open Sans", sans-serif;
 	font-size: 30px;
 	bottom: 15%;
 }
@@ -155,6 +158,6 @@ input:checked + .slider:before {
 
 .github {
 	position:fixed;
-	top:0;
+	bottom:0;
 	left:0;
 }
